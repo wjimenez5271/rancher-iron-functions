@@ -19,19 +19,15 @@ services:
       io.rancher.container.agent.role: environmentAdmin
       io.rancher.container.create_agent: 'true'
   setup-dbuser:
-    image: postgres
+    image: wjimenez5271/postgres_client
     environment:
       PGPASSWORD: ironfunctions
+      PGUSER: postgres
+      PGHOST: postgres
+      PGQUERY: GRANT ALL PRIVILEGES ON DATABASE funcs TO postgres;
+      SLEEP_BEFORE_EXEC: '5'
     stdin_open: true
     tty: true
-    command:
-    - psql
-    - -h
-    - postgres
-    - -U
-    - postgres
-    - -c
-    - GRANT ALL PRIVILEGES ON DATABASE funcs TO postgres;
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.start_once: 'true'
@@ -51,19 +47,14 @@ services:
     labels:
       io.rancher.container.pull_image: always
   setup-db:
-    image: postgres
+    image: wjimenez5271/postgres_client
     environment:
       PGPASSWORD: ironfunctions
+      PGUSER: postgres
+      PGHOST: postgres
+      PGQUERY: CREATE DATABASE funcs;
     stdin_open: true
     tty: true
-    command:
-    - psql
-    - -h
-    - postgres
-    - -U
-    - postgres
-    - -c
-    - CREATE DATABASE funcs;
     labels:
       io.rancher.container.pull_image: always
       io.rancher.container.start_once: 'true'

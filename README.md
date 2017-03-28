@@ -1,2 +1,2 @@
 # Iron Functions on Rancher
-An implementation of [https://github.com/iron-io/functions](IronFunctions) on [http://rancher.com](Rancher)
+An implementation of [IronFunctions](https://github.com/iron-io/functions) on [Rancher](http://rancher.com)
