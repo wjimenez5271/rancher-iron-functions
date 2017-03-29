@@ -32,4 +32,7 @@ See https://github.com/iron-io/functions#quickstart for more details on using Ir
 ### Scaling
 By default, the stack creates 2 instances of `iron/functions`. As request count increases you will need to scale this count, see this guide for more information on scaling best practices: https://github.com/iron-io/functions/blob/master/docs/operating/production.md
 
-The postgres and redis containers in this stack are QTY 1. For high availability and performance these would need to be scaled as well, however replication/clustering would need to be addressed. 
+The `postgres` and `redis` containers in this stack are QTY 1. For high availability and performance these would need to be scaled as well, however replication/clustering would need to be addressed.
+
+### What do I do with this?
+Once you got the stack running, its time to start writing your own functions! See https://github.com/iron-io/functions#write-a-function or for a quick demo see: https://github.com/wjimenez5271/iron-func-demo.
