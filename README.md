@@ -7,11 +7,13 @@ Uses Postgres for data persistence and Redis for queueing. The stack provides tw
 Rancher container environment. See [Rancher QuickStart Guide](http://docs.rancher.com/rancher/v1.5/en/quick-start-guide/) for details on setting this up
 
 ### Usage
-Create a stack in rancher using `docker-compose.yml` & `rancher-compose.yml`. Using the [Rancher CLI](https://docs.rancher.com/rancher/v1.2/en/cli/) from the root directory of this repo run:
+Create a stack in rancher using the provided `docker-compose.yml` & `rancher-compose.yml`. Using the [Rancher CLI](https://docs.rancher.com/rancher/v1.2/en/cli/) from the root directory of this repo run:
 
 ```
 rancher up -s iron-functions -d
 ```
+
+This can also be installed via the [Rancher](http://rancher.com) [Community Catalog](https://github.com/rancher/community-catalog/tree/master/templates/iron-functions)
 
 Once it is running, you should be able to interface with the API at
 
