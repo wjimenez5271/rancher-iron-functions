@@ -31,9 +31,7 @@ rancher up -s iron-functions -d
 2. Use the search box in the upper right to find the IronFunctions catalog item
 3. Select launch!
 
-The code for this in the catalog can be found [here][Community Catalog](https://github.com/rancher/community-catalog/tree/master/templates/iron-functions)
-[Rancher](http://rancher.com)
-
+The code for this in the catalog can be found [here](https://github.com/rancher/community-catalog/tree/master/templates/iron-functions)
 
 ## First use
 
@@ -72,4 +70,4 @@ Using FaaS for something cool on top of Rancher? We'd love to hear about it. Hav
 - [Rancher Forums](https://forums.rancher.com/)
 
 
-This project is based on https://github.com/iron-io/functions and work of the team at Iron.io. Thanks for the great work! 
+This project is based on https://github.com/iron-io/functions and work of the team at Iron.io. Thanks for the great work!
