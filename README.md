@@ -26,7 +26,7 @@ rancher up -s iron-functions -d
 ```
 
 
-### Using the Community Catalog
+#### Using the Community Catalog
 1. Open the Rancher UI and select "Community Catalog" from the "Catalog" menu at the top
 2. Use the search box in the upper right to find the IronFunctions catalog item
 3. Select launch!
