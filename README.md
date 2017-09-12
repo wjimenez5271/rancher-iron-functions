@@ -1,7 +1,7 @@
 # Iron Functions on Rancher
 An implementation of [IronFunctions](https://github.com/iron-io/functions) on [Rancher](http://rancher.com). This implementation helps you to build "serverless" (also known as Functions as a Service) applications on Rancher.
 
-Uses Postgres for data persistence and Redis for queueing. The stack provides two interfaces, a UI and an API HTTP interface.
+Uses Postgres for data persistence and Redis for queueing. The stack provides two interfaces, a UI and an API HTTP interface. This blog post has more details about working with the stack: http://rancher.com/running-serverless-applications-rancher/
 
 ## Requirements
 Rancher container environment. See [Rancher QuickStart Guide](http://docs.rancher.com/rancher/v1.5/en/quick-start-guide/) for details on setting this up
